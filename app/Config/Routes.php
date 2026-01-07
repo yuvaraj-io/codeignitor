@@ -13,6 +13,9 @@ $routes->post('register', 'Register::submit');
 $routes->get('login', 'Login::index');
 $routes->post('login', 'Login::submit');
 $routes->get('logout', 'Logout::index');
+$routes->get('dashboard', 'Dashboard::index', ['filter' => 'auth']);
+$routes->get('upload', 'Upload::index');
+$routes->post('upload', 'Upload::submit');
 
 // $routes->get('/setup', 'Setup::index');
 // $routes->get('/setup/droptable', 'Setup::dropTable');
