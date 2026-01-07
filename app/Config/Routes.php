@@ -10,6 +10,9 @@ $routes->get('/user/(:num)', 'Home::index/$1');
 $routes->get('/profile/(:num)', 'Home::profile/$1');
 $routes->get('register', 'Register::index');
 $routes->post('register', 'Register::submit');
+$routes->get('login', 'Login::index');
+$routes->post('login', 'Login::submit');
+$routes->get('logout', 'Logout::index');
 
 // $routes->get('/setup', 'Setup::index');
 // $routes->get('/setup/droptable', 'Setup::dropTable');
